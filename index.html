@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -40,8 +41,17 @@
         }
 
         @keyframes float {
-            0%, 100% { transform: translateY(0) rotate(0deg); opacity: 0.3; }
-            50% { transform: translateY(-100vh) rotate(360deg); opacity: 1; }
+
+            0%,
+            100% {
+                transform: translateY(0) rotate(0deg);
+                opacity: 0.3;
+            }
+
+            50% {
+                transform: translateY(-100vh) rotate(360deg);
+                opacity: 1;
+            }
         }
 
         /* Navigation */
@@ -127,6 +137,7 @@
                 opacity: 0;
                 transform: translateY(50px);
             }
+
             to {
                 opacity: 1;
                 transform: translateY(0);
@@ -145,8 +156,15 @@
         }
 
         @keyframes shimmer {
-            0%, 100% { background-position: 0% 50%; }
-            50% { background-position: 100% 50%; }
+
+            0%,
+            100% {
+                background-position: 0% 50%;
+            }
+
+            50% {
+                background-position: 100% 50%;
+            }
         }
 
         .hero p {
@@ -175,7 +193,7 @@
             left: -100%;
             width: 100%;
             height: 100%;
-            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
             transition: left 0.5s;
         }
 
@@ -329,17 +347,18 @@
             .nav-links {
                 display: none;
             }
-            
+
             .hero h1 {
                 font-size: 2.5rem;
             }
-            
+
             .projects-grid {
                 grid-template-columns: 1fr;
             }
         }
     </style>
 </head>
+
 <body>
     <!-- Background Particles -->
     <div class="bg-particles"></div>
@@ -370,115 +389,134 @@
     <section class="projects" id="projects">
         <h2 class="section-title">Featured Projects</h2>
         <div class="projects-grid">
-            
+
             <div class="project-card">
                 <div class="project-image">🚀</div>
                 <h3 class="project-title">Mapping Protein Interactions</h3>
-                <p class="project-description">Established a new workflow compatible with NGS/Proteomics to generate high-quality interactome data.</p>
+                <p class="project-description">Established a new workflow compatible with NGS/Proteomics to generate
+                    high-quality interactome data. Project included plasmid design, protein purification, biotin
+                    labeling, and streptavidin pull-down.</p>
                 <div class="project-tags">
                     <span class="tag">Python</span>
                     <span class="tag">Bash</span>
                     <span class="tag">NGS</span>
+                    <span class="tag">Protein purification</span>
+                    <span class="tag">SDS-PAGE</span>
+                    <span class="tag">Immunofluorescence</span>
+                    <span class="tag">Gene synthesis</span>
+                    <span class="tag">Molecular cloning</span>
                     <span class="tag">Proteomics</span>
                 </div>
                 <div class="project-links">
-                    <a href="#" class="project-link">Live Demo</a>
-                    <a href="#" class="project-link">GitHub</a>
+                    <!-- <a href="#" class="project-link">Live Demo</a> -->
+                    <!-- <a href="#" class="project-link">GitHub</a> -->
                 </div>
             </div>
 
             <div class="project-card">
                 <div class="project-image">🎨</div>
-                <h3 class="project-title">Design System</h3>
-                <p class="project-description">A comprehensive design system and component library that ensures consistency across multiple products and platforms.</p>
+                <h3 class="project-title">Data Analysis & Visualization</h3>
+                <p class="project-description">Independently analyzed LC-MS/MS CSV datasets using Python (pandas, NumPy,
+                    SciPy, matplotlib) for filtering, quantification, statistical testing, and visualization.</p>
                 <div class="project-tags">
-                    <span class="tag">Figma</span>
-                    <span class="tag">Storybook</span>
-                    <span class="tag">CSS</span>
+                    <span class="tag">Python</span>
+                    <span class="tag">Bash</span>
+                    <span class="tag">Pandas</span>
                     <span class="tag">Documentation</span>
+                    <span class="tag">NumPy</span>
+                    <span class="tag">Matplotlib</span>
                 </div>
                 <div class="project-links">
-                    <a href="#" class="project-link">View System</a>
-                    <a href="#" class="project-link">Documentation</a>
-                </div>
-            </div>
-
-            <div class="project-card">
-                <div class="project-image">📱</div>
-                <h3 class="project-title">Mobile App</h3>
-                <p class="project-description">Cross-platform mobile application with seamless user experience and powerful features for modern lifestyle management.</p>
-                <div class="project-tags">
-                    <span class="tag">React Native</span>
-                    <span class="tag">Firebase</span>
-                    <span class="tag">Redux</span>
-                    <span class="tag">API</span>
-                </div>
-                <div class="project-links">
-                    <a href="#" class="project-link">App Store</a>
-                    <a href="#" class="project-link">Details</a>
+                    <!--<a href="#" class="project-link">View System</a>-->
+                    <!--<a href="#" class="project-link">Documentation</a>-->
                 </div>
             </div>
 
             <div class="project-card">
                 <div class="project-image">⚡</div>
-                <h3 class="project-title">Performance Tool</h3>
-                <p class="project-description">Advanced analytics and optimization tool that helps developers identify bottlenecks and improve application performance.</p>
+                <h3 class="project-title">Training and Knowledge Transfer</h3>
+                <p class="project-description">Provided hands-on training to colleagues in advanced molecular biology
+                    techniques, including the protein interactions workflow, Micro-C chromatin library preparation,
+                    CRISPR/Cas9 In Vitro cleavage assay, luciferase reporter assay, molecular cloning and antibody
+                    preadsorption assay.</p>
                 <div class="project-tags">
-                    <span class="tag">JavaScript</span>
-                    <span class="tag">WebGL</span>
-                    <span class="tag">D3.js</span>
-                    <span class="tag">Analytics</span>
+                    <span class="tag">NGS</span>
+                    <span class="tag">Immunoprecipitation</span>
+                    <span class="tag">Immunofluorescence</span>
+                    <span class="tag">Molecular cloning</span>
                 </div>
                 <div class="project-links">
-                    <a href="#" class="project-link">Try Tool</a>
-                    <a href="#" class="project-link">Source</a>
-                </div>
-            </div>
-
-            <div class="project-card">
-                <div class="project-image">🌐</div>
-                <h3 class="project-title">E-Commerce Platform</h3>
-                <p class="project-description">Full-featured e-commerce solution with modern design, secure payments, and seamless shopping experience.</p>
-                <div class="project-tags">
-                    <span class="tag">Next.js</span>
-                    <span class="tag">Stripe</span>
-                    <span class="tag">PostgreSQL</span>
-                    <span class="tag">Tailwind</span>
-                </div>
-                <div class="project-links">
-                    <a href="#" class="project-link">Visit Site</a>
-                    <a href="#" class="project-link">Case Study</a>
+                    <!--<a href="#" class="project-link">App Store</a>-->
+                    <!--<a href="#" class="project-link">Details</a>-->
                 </div>
             </div>
 
             <div class="project-card">
                 <div class="project-image">🤖</div>
-                <h3 class="project-title">AI Dashboard</h3>
-                <p class="project-description">Interactive dashboard for AI model management with real-time monitoring, training insights, and performance metrics.</p>
+                <h3 class="project-title">Heart Disease Prediction</h3>
+                <p class="project-description">Machine learning project. Built a scikit-learn classification model to
+                    predict heart disease risk, including preprocessing, feature selection, and model evaluation.</p>
                 <div class="project-tags">
                     <span class="tag">Python</span>
-                    <span class="tag">TensorFlow</span>
-                    <span class="tag">Flask</span>
-                    <span class="tag">Chart.js</span>
+                    <span class="tag">Scikit-learn</span>
+                    <span class="tag">Pandas</span>
+                    <span class="tag">NumPy</span>
+                    <span class="tag">Matplotlib</span>
                 </div>
                 <div class="project-links">
-                    <a href="#" class="project-link">Demo</a>
-                    <a href="#" class="project-link">Research</a>
+                    <!--<a href="#" class="project-link">Try Tool</a>-->
+                    <!--<a href="#" class="project-link">Source</a>-->
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-image">🤖</div>
+                <h3 class="project-title">Bulldozer Price Prediction</h3>
+                <p class="project-description">Machine learning project. Implemented a regression model in scikit-learn
+                    to forecast bulldozer prices, applying feature engineering and cross-validation.</p>
+                <div class="project-tags">
+                    <span class="tag">Scikit-learn</span>
+                    <span class="tag">Python</span>
+                    <span class="tag">Pandas</span>
+                    <span class="tag">Matplotlib</span>
+                    <span class="tag">NumPy</span>
+                </div>
+                <div class="project-links">
+                    <!--<a href="#" class="project-link">Visit Site</a>-->
+                    <!--<a href="#" class="project-link">Case Study</a>-->
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-image">🌐</div>
+                <h3 class="project-title">Python-based Stock Analyzer</h3>
+                <p class="project-description">Designed a tool for stock market analysis using Python (pandas,
+                    matplotlib), including data retrieval, visualization, and basic trading indicators.</p>
+                <div class="project-tags">
+                    <span class="tag">Python</span>
+                    <span class="tag">Pandas</span>
+                    <span class="tag">Matplotlib</span>
+                    <span class="tag">NumPy</span>
+                </div>
+                <div class="project-links">
+                    <!--<a href="#" class="project-link">Demo</a>-->
+                    <!--<a href="#" class="project-link">Research</a>-->
                 </div>
             </div>
 
         </div>
     </section>
-    
+
     <section id="about" style="padding: 5rem 2rem; max-width: 1000px; margin: 0 auto; text-align: center;">
-      <h2 class="section-title">About Me</h2>
-      <p>
-        I am a Molecular Biologist working at the Max Planck Institute of Biochemistry with 5+ years of experience in molecular genetics. 
-        My expertise spans <strong>NGS workflows, data analysis in Python/Bash, and machine learning</strong>. 
-        Currently, I’m exploring bioinformatics-driven approaches to understand the life.
-      </p>
+        <h2 class="section-title">About Me</h2>
+        <p>
+            I am a Molecular Biologist working at the Max Planck Institute of Biochemistry with 5+ years of experience
+            in molecular genetics and computer coding.
+            My expertise spans <strong>NGS workflows, data analysis in python, and machine learning</strong>.
+            Currently, I’m exploring bioinformatics-driven approaches to understand the life.
+        </p>
     </section>
-    
+
     <!-- Footer -->
     <footer id="contact">
         <div class="social-links">
@@ -487,7 +525,7 @@
             <a href="https://github.com/aleksandar-lalic" class="social-link">🐙</a>
             <a href="#" class="social-link">🐦</a>
         </div>
-        <p>&copy; 2024 Your Name. Crafted with passion and code.</p>
+        <p>&copy; Aleksandar Lalic. Crafted with passion and code.</p>
     </footer>
 
     <script>
@@ -530,13 +568,13 @@
 
             window.addEventListener('scroll', () => {
                 const currentScroll = window.pageYOffset;
-                
+
                 if (currentScroll > 100) {
                     nav.style.background = 'rgba(15, 15, 35, 0.95)';
                 } else {
                     nav.style.background = 'rgba(15, 15, 35, 0.9)';
                 }
-                
+
                 lastScroll = currentScroll;
             });
         }
@@ -544,12 +582,12 @@
         // Project card hover effects
         function cardEffects() {
             const cards = document.querySelectorAll('.project-card');
-            
+
             cards.forEach(card => {
                 card.addEventListener('mouseenter', () => {
                     card.style.transform = 'translateY(-10px) scale(1.02)';
                 });
-                
+
                 card.addEventListener('mouseleave', () => {
                     card.style.transform = 'translateY(0) scale(1)';
                 });
@@ -567,7 +605,7 @@
         // Add scroll reveal animation
         function scrollReveal() {
             const cards = document.querySelectorAll('.project-card');
-            
+
             const observer = new IntersectionObserver((entries) => {
                 entries.forEach(entry => {
                     if (entry.isIntersecting) {
@@ -576,7 +614,7 @@
                     }
                 });
             }, { threshold: 0.1 });
-            
+
             cards.forEach(card => {
                 card.style.opacity = '0';
                 card.style.transform = 'translateY(30px)';
@@ -591,4 +629,5 @@
         });
     </script>
 </body>
+
 </html>
